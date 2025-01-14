@@ -1,50 +1,25 @@
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/Luarmor123/community-Y-HUB/refs/heads/main/Gui")))()
 
-Library:SetTheme("dark") -- https://raw.githubusercontent.com/REDzHUB/RedzLibV4/main/Themes.lua
-
-Library:SetTransparency(0.1) -- 0, 1
-
-Library:GetThemes() -- void, return = table
-
-Library:GetIcon("GG")
-
--- ///////// 
-
-Library.info.PlaceName
-
-Library.info.Version
-
-local Window = redzlib:MakeWindow({
-  Title = "REDz HUB : Example",
-  SubTitle = "by : redz9999",
-  LoadText = "redz Hub",
-  Flags = "redz Hub | Example.lua"
-})
-
-Window:AddMinimizeButton({
-  Button = {
-    -- Button Properties
-    Image = "rbxassetid://15298567397"
+MakeWindow({
+  Hub = {
+    Title = "Legends Of Speed V1.5 | R7K",
+    Animation = "جار الuyhgfvتحميل"
   },
-  UICorner = {true,
-    -- Corner Properties
-    CornerRadius = UDim.new(0.5, 0)
-  },
-  UIStroke = {false, {
-    -- Stroke Properties
-  }}
-})
---[[
-  Window:Set("New Title or Image")
-]]
-
-local Notify = Library:MakeNotify({
-  Title = "Notification",
-  Text = "This is a Notification",
-  Time = 5
+  Key = {
+    KeySystem = false,
+    Title = "Key System",
+    Description = "",
+    KeyLink = "",
+    Keys = {"1234"},
+    Notifi = {
+      Notifications = true,
+      CorrectKey = "Running the Script...",
+      Incorrectkey = "The key is incorrect",
+      CopyKeyLink = "Copied to Clipboard"
+    }
+  }
 })
 
---[[
   Notify:Wait() -- Wait for the notification to end
 ]]
 
